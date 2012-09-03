@@ -5,12 +5,13 @@ Convenience category for UIStoryboardSegue to give you the desired view controll
 
 To use:
 
-1) Import into a UIViewController subclass
-2) In prepareForSegue:
-
- - (void)prepareForSegue:(UIStoryboardSegue *)segue {
-     if ([segue.identifier isEqualToString:@"someID"]) {
-          SomeCustomViewController *customController = [segue trueDestinationController];
-					//	Go about your business
-     }
- }
+ 1. Import into a UIViewController subclass
+ 2.  In prepareForSegue:
+<pre><code>
+- (void)prepareForSegue:(UIStoryboardSegue *)segue {
+    if ([segue.identifier isEqualToString:@"someID"]) {
+        SomeCustomViewController *customController = [segue trueDestinationController];
+        //	Go about your business
+    }
+}
+</code></pre>
